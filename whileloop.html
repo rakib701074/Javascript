@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="r1"></div>
+    <div id="r2"></div>
+    <div id="r3"></div>
+    <div id="r4"></div>
+    <div id="r5"></div> -->
+
+    <div id="v0"></div>
+ <div id="d00"></div>
+ <div id="d01"></div>
+ <div id="d02"></div>
+  <div id="v1"></div>
+ <!-- <div id="v2"></div> -->
+ <!-- <div id="v3"></div> -->
+ <!-- <div id="v4"></div> -->
+ <!-- <div id="v5"></div> -->
+ <!-- <div id="v6"></div> -->
+ <div id="d10"></div>
+ <div id="d11"></div>
+ <div id="d12"></div>
+
+ <div id="v2"></div>
+ <div id="d20"></div>
+ <div id="d21"></div>
+ <div id="d22"></div>
+ <div id="d23"></div>
+    <script>
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+// var text="<ul>";
+//     var i=0;
+//     while(i<cars.length)
+//     {
+//         text +="<li>"+cars[i]+"</li>";
+//         i++;
+//     }
+//     text +="</ul>";
+// document.getElementById("r1").innerHTML = text;
+// console.log(text);
+
+
+// var Name=["shakir","shoaib","irfan","rakib"];
+ 
+// var text="<ul>";
+//     var i=0;
+//     while(i<Name.length)
+//     {
+//         text +="<li>"+Name[i]+" "+"</li>";
+//         i++;
+//     }
+// text +="</ul>";
+// document.getElementById("r2").innerHTML= text;
+
+
+
+// var person= ["shaikh","rakip","irfan"];
+//  var j=0;
+//  while(j<person.length)
+
+//  {
+//     console.log(person[j]);
+//     document.getElementById("r5").innerHTML = (person + "<br>");
+//     j++; 
+//  }
+
+var i=0;
+while(i<3){
+    document.getElementById("v"+i).innerHTML= (i+"<strong> out loop </strong>");
+    
+    // document.write("<br>");
+    var j=0;
+    while(j<3){
+document.getElementById("d"+i+j).innerHTML = (j+"inner loop");
+j++;
+// document.write("<br>");
+    }
+    i++;
+}
+
+
+    </script>
+    
+</body>
+</html>
